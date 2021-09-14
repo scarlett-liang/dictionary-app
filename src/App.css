@@ -1,1 +1,8 @@
-
+.App {
+  margin: 30px 120px;
+  background-color: rgb(235, 206, 126);
+}
+.App-header {
+  font-size: 56px;
+  margin: 20px auto;
+}
