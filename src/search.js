@@ -10,6 +10,7 @@ export default function Search() {
   }
   function handleSubmit(event) {
     event.preventDefault();
+    // document: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
