@@ -1,20 +1,19 @@
 import Synonym from "./synonym";
+import "./App.css";
+
 export default function Definition(props) {
   return (
     <div className="Definition">
-      <br />
       <h3>{props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            <p>
-              <strong>Definition:</strong>
-              {definition.definition}
-              <br />
-              <strong>Example:</strong>
-              {definition.example}
-              <Synonym synonym={definition.synonyms} />
-            </p>
+            {definition.definition}
+            <div className="example opacity-75 fst-italic">
+              "{definition.example}."
+            </div>
+            <Synonym synonym={definition.synonyms} />
+            <br />
           </div>
         );
       })}

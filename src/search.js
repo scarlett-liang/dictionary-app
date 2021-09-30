@@ -21,20 +21,20 @@ export default function Search() {
   }
   return (
     <div className="Search">
-      <form onSubmit={handleSubmit}>
-        <div className="row g-3 text-center">
+      <section>
+        <form onSubmit={handleSubmit}>
           <input
+            className="form-control"
             type="search"
-            className="col-8 ms-5"
-            placeholder="What word do u wanna look up?"
+            placeholder="What word do u wanna look up 📖?"
             autoFocus={true}
             onChange={handleChange}
           />
-          <button type="submit" className="btn btn-primary col ms-1 me-5">
-            Search
-          </button>
+        </form>
+        <div className="hint opacity-75">
+          Hint: volleyball, festival, psychology,etc
         </div>
-      </form>
+      </section>
       <Result results={results} />
     </div>
   );

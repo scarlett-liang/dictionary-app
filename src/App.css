@@ -1,8 +1,91 @@
-.App {
-  margin: 30px 120px;
-  background-color: rgb(235, 206, 126);
+:root {
+  --primary-color: #fdf2da;
+  --secondary-color: #99381b;
+  --heading-font: "Lobster", cursive;
+  --para-font: "Noto Sans Display", sans-serif;
+}
+body {
+  background-image: url("./coffee.gif");
+  background-size: cover;
+  background-position-y: center;
+  font-family: var(--para-font);
 }
 .App-header {
-  font-size: 56px;
-  margin: 20px auto;
+  font-size: 72px;
+  margin: 70px auto 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+section {
+  margin: 30px 120px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  border: solid 1px #fdf2daa2;
+  background-color: #fdf2daa2;
+  font-family: var(--para-font);
+}
+input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 1px #fdf2daa2;
+}
+.Search .hint {
+  font-size: 14px;
+}
+.Definition .example {
+  font-size: 14px;
+}
+.Synonym ul {
+  margin: 5px 0 0;
+  padding: 0;
+}
+.Synonym li {
+  display: inline-block;
+  margin: 5px 15px 5px 0;
+  font-size: 14px;
+  padding: 2px 10px;
+  border: solid 1px var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 25px;
+}
+footer {
+  margin-bottom: 20px;
+  font-family: var(--para-font);
+  font-size: 14px;
+  opacity: 0.75;
+}
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.Result h2 {
+  font-size: 44px;
+  color: var(--secondary-color);
+  line-height: 1.8;
+}
+.Definition h3 {
+  font-size: 28px;
+}
+.Phonetic a {
+  padding: 5px 7px;
+  border: solid 2px var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 50px;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: all 150ms ease-in-out;
+  font-weight: bold;
+}
+.Phonetic .pronounciation {
+  font-weight: bold;
+  font-size: 18px;
+}
+.Phonetic a :hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+footer a:hover {
+  color: var(--secondary-color);
 }

@@ -9,6 +9,7 @@ function App() {
       <main>
         <Search />
       </main>
+
       <footer className="text-center mt-5">
         GitHub{" "}
         <a
