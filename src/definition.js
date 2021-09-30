@@ -1,3 +1,4 @@
+import Synonym from "./synonym";
 export default function Definition(props) {
   return (
     <div className="Definition">
@@ -7,11 +8,12 @@ export default function Definition(props) {
         return (
           <div key={index}>
             <p>
+              <strong>Definition:</strong>
               {definition.definition}
               <br />
-              <strong>
-                <em>{definition.example}</em>
-              </strong>
+              <strong>Example:</strong>
+              {definition.example}
+              <Synonym synonym={definition.synonyms} />
             </p>
           </div>
         );
