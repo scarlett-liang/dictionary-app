@@ -80,7 +80,10 @@ footer a {
 }
 .Phonetic .pronounciation {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 .Photo img {
   margin-bottom: 10px;

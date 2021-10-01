@@ -11,15 +11,14 @@ function App() {
       </main>
 
       <footer className="text-center mt-5">
-        GitHub{" "}
         <a
           href="https://github.com/scarlett-liang/dictionary-app"
           rel="noreferrer"
           target="_blank"
         >
-          open-source
+          GitHub
         </a>{" "}
-        code developed by Scarlett Liang
+        open-source code developed by Scarlett Liang
       </footer>
     </div>
   );
