@@ -10,7 +10,7 @@ export default function Definition(props) {
           <div key={index}>
             {definition.definition}
             <div className="example opacity-75 fst-italic">
-              "{definition.example}."
+              {definition.example}
             </div>
             <Synonym synonym={definition.synonyms} />
             <br />
