@@ -23,7 +23,7 @@ export default function Search() {
     // document: https://www.pexels.com/api/documentation/
     let pexelsApiKey = `563492ad6f91700001000001ad09a6aa4b4644ae87eb5f882dd588cf`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-    let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+    let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     axios.get(pexelsUrl, { headers: headers }).then(handlePexelsResponse);
   }
   function handleChange(event) {
